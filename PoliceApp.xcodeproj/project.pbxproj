@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8748CE0F2D9953A300B7F8C6 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8748CE0E2D9953A300B7F8C6 /* UIImageView+Extensions.swift */; };
+		8748CE112D9953C800B7F8C6 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8748CE102D9953C800B7F8C6 /* UITextField+Extensions.swift */; };
+		8748CE172D9954E200B7F8C6 /* UITextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8748CE162D9954E200B7F8C6 /* UITextView+Extensions.swift */; };
+		8748CE192D99561500B7F8C6 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8748CE182D99561500B7F8C6 /* UIImage+Extensions.swift */; };
 		87501ACA2D97D78C00175C2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87501AC92D97D78C00175C2E /* AppDelegate.swift */; };
 		87501ACC2D97D78C00175C2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87501ACB2D97D78C00175C2E /* SceneDelegate.swift */; };
 		87501ACE2D97D78C00175C2E /* IncidentReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87501ACD2D97D78C00175C2E /* IncidentReportViewController.swift */; };
@@ -17,11 +21,15 @@
 		87501AE02D97DF6F00175C2E /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87501ADF2D97DF6F00175C2E /* NewsTableViewController.swift */; };
 		87501B4E2D9846F400175C2E /* NewsArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87501B4D2D9846F400175C2E /* NewsArticle.swift */; };
 		87501B502D98476000175C2E /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87501B4F2D98476000175C2E /* NewsTableViewCell.swift */; };
-		87501B522D984BC600175C2E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87501B512D984BC600175C2E /* UIColor.swift */; };
+		87501B522D984BC600175C2E /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87501B512D984BC600175C2E /* UIColor+Extensions.swift */; };
 		87501B542D9931D500175C2E /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87501B532D9931D500175C2E /* AuthorizationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8748CE0E2D9953A300B7F8C6 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		8748CE102D9953C800B7F8C6 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		8748CE162D9954E200B7F8C6 /* UITextView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extensions.swift"; sourceTree = "<group>"; };
+		8748CE182D99561500B7F8C6 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		87501AC62D97D78C00175C2E /* PoliceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoliceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87501AC92D97D78C00175C2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87501ACB2D97D78C00175C2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,7 +42,7 @@
 		87501ADF2D97DF6F00175C2E /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		87501B4D2D9846F400175C2E /* NewsArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticle.swift; sourceTree = "<group>"; };
 		87501B4F2D98476000175C2E /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
-		87501B512D984BC600175C2E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		87501B512D984BC600175C2E /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		87501B532D9931D500175C2E /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,6 +57,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8748CE0C2D99536400B7F8C6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8748CE0D2D99536E00B7F8C6 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8748CE0D2D99536E00B7F8C6 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				87501B512D984BC600175C2E /* UIColor+Extensions.swift */,
+				8748CE0E2D9953A300B7F8C6 /* UIImageView+Extensions.swift */,
+				8748CE182D99561500B7F8C6 /* UIImage+Extensions.swift */,
+				8748CE102D9953C800B7F8C6 /* UITextField+Extensions.swift */,
+				8748CE162D9954E200B7F8C6 /* UITextView+Extensions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		8748CE122D9953E300B7F8C6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				87501ACD2D97D78C00175C2E /* IncidentReportViewController.swift */,
+				87501B532D9931D500175C2E /* AuthorizationViewController.swift */,
+				87501ADD2D97DB7D00175C2E /* SosViewController.swift */,
+				87501ADF2D97DF6F00175C2E /* NewsTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8748CE132D9953FE00B7F8C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				87501B4D2D9846F400175C2E /* NewsArticle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8748CE142D99540B00B7F8C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8748CE152D99540F00B7F8C6 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8748CE152D99540F00B7F8C6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				87501B4F2D98476000175C2E /* NewsTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		87501ABD2D97D78C00175C2E = {
 			isa = PBXGroup;
 			children = (
@@ -68,15 +131,12 @@
 		87501AC82D97D78C00175C2E /* PoliceApp */ = {
 			isa = PBXGroup;
 			children = (
+				8748CE142D99540B00B7F8C6 /* Views */,
+				8748CE132D9953FE00B7F8C6 /* Models */,
+				8748CE122D9953E300B7F8C6 /* Controllers */,
+				8748CE0C2D99536400B7F8C6 /* Extensions */,
 				87501AC92D97D78C00175C2E /* AppDelegate.swift */,
-				87501B512D984BC600175C2E /* UIColor.swift */,
-				87501B532D9931D500175C2E /* AuthorizationViewController.swift */,
 				87501ACB2D97D78C00175C2E /* SceneDelegate.swift */,
-				87501ACD2D97D78C00175C2E /* IncidentReportViewController.swift */,
-				87501B4F2D98476000175C2E /* NewsTableViewCell.swift */,
-				87501B4D2D9846F400175C2E /* NewsArticle.swift */,
-				87501ADD2D97DB7D00175C2E /* SosViewController.swift */,
-				87501ADF2D97DF6F00175C2E /* NewsTableViewController.swift */,
 				87501ACF2D97D78C00175C2E /* Main.storyboard */,
 				87501AD22D97D79100175C2E /* Assets.xcassets */,
 				87501AD42D97D79100175C2E /* LaunchScreen.storyboard */,
@@ -156,13 +216,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8748CE112D9953C800B7F8C6 /* UITextField+Extensions.swift in Sources */,
+				8748CE0F2D9953A300B7F8C6 /* UIImageView+Extensions.swift in Sources */,
 				87501B542D9931D500175C2E /* AuthorizationViewController.swift in Sources */,
 				87501ACE2D97D78C00175C2E /* IncidentReportViewController.swift in Sources */,
 				87501B502D98476000175C2E /* NewsTableViewCell.swift in Sources */,
 				87501B4E2D9846F400175C2E /* NewsArticle.swift in Sources */,
 				87501ACA2D97D78C00175C2E /* AppDelegate.swift in Sources */,
+				8748CE172D9954E200B7F8C6 /* UITextView+Extensions.swift in Sources */,
 				87501ADE2D97DB7D00175C2E /* SosViewController.swift in Sources */,
-				87501B522D984BC600175C2E /* UIColor.swift in Sources */,
+				87501B522D984BC600175C2E /* UIColor+Extensions.swift in Sources */,
+				8748CE192D99561500B7F8C6 /* UIImage+Extensions.swift in Sources */,
 				87501AE02D97DF6F00175C2E /* NewsTableViewController.swift in Sources */,
 				87501ACC2D97D78C00175C2E /* SceneDelegate.swift in Sources */,
 			);

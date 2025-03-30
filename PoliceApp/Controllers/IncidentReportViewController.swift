@@ -13,7 +13,11 @@ import CoreLocation
 class IncidentReportViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate {
     
     // UI Elements
-    let imageView = UIImageView()
+    private lazy var imageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.resetToPlaceholderImage()
+        return imageView
+    }()
     let descriptionTextView = UITextView()
     let selectMediaButton = UIButton()
     let submitButton = UIButton()
@@ -173,7 +177,11 @@ class IncidentReportViewController: UIViewController, UIImagePickerControllerDel
     
     func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        let okAction = UIAlertAction(title: "OK", style: .default) { [weak self] _ in
+            self?.imageView.resetToPlaceholderImage()
+            self?.descriptionTextView.reset()
+        }
+        alert.addAction(okAction)
         present(alert, animated: true)
         
     }
